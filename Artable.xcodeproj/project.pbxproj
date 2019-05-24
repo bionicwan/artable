@@ -21,6 +21,7 @@
 		AC959CD6229837910060540C /* ArtableAdminTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC959CD5229837910060540C /* ArtableAdminTests.swift */; };
 		AC959CE1229837910060540C /* ArtableAdminUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC959CE0229837910060540C /* ArtableAdminUITests.swift */; };
 		AC959CED2298380C0060540C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC959C932298372F0060540C /* Assets.xcassets */; };
+		AC959CEF22983C080060540C /* LoginStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC959CEE22983C080060540C /* LoginStoryboard.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +81,7 @@
 		AC959CDC229837910060540C /* ArtableAdminUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ArtableAdminUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC959CE0229837910060540C /* ArtableAdminUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtableAdminUITests.swift; sourceTree = "<group>"; };
 		AC959CE2229837910060540C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC959CEE22983C080060540C /* LoginStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginStoryboard.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +162,7 @@
 			children = (
 				AC959C8C2298372E0060540C /* AppDelegate.swift */,
 				AC959C8E2298372E0060540C /* ViewController.swift */,
+				AC959CEE22983C080060540C /* LoginStoryboard.storyboard */,
 				AC959C902298372E0060540C /* Main.storyboard */,
 				AC959C952298372F0060540C /* LaunchScreen.storyboard */,
 				AC959C982298372F0060540C /* Info.plist */,
@@ -397,6 +400,7 @@
 				AC959C972298372F0060540C /* LaunchScreen.storyboard in Resources */,
 				AC959C942298372F0060540C /* Assets.xcassets in Resources */,
 				AC959C922298372E0060540C /* Main.storyboard in Resources */,
+				AC959CEF22983C080060540C /* LoginStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
