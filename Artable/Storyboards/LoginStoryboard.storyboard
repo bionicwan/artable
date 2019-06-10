@@ -190,7 +190,7 @@
                                     </button>
                                 </subviews>
                             </stackView>
-                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="tJk-hh-Wz2">
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="tJk-hh-Wz2">
                                 <rect key="frame" x="169" y="402.33333333333331" width="37" height="37"/>
                                 <color key="color" red="0.2274509804" green="0.2666666667" blue="0.36078431370000003" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                             </activityIndicatorView>
@@ -229,8 +229,10 @@
                     </view>
                     <connections>
                         <outlet property="activityIndicator" destination="tJk-hh-Wz2" id="A2R-01-h2n"/>
+                        <outlet property="confirmPassCheckImg" destination="VPA-9w-iE8" id="Skk-jd-fz3"/>
                         <outlet property="confirmPasswordTxt" destination="zTx-4c-8TF" id="pMU-Ca-vom"/>
                         <outlet property="emailTxt" destination="EIt-Be-49V" id="VrO-cS-ZlJ"/>
+                        <outlet property="passCheckImg" destination="D1z-aW-eqf" id="PdI-hl-as2"/>
                         <outlet property="passwordTxt" destination="Yt9-gM-QGl" id="vc8-IQ-QNc"/>
                         <outlet property="usernameTxt" destination="lmH-xJ-VHn" id="faI-yV-bD4"/>
                     </connections>
