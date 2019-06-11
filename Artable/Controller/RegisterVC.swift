@@ -42,11 +42,11 @@ class RegisterVC: UIViewController {
         }
         
         if passwordTxt.text == confirmPasswordTxt.text {
-            passCheckImg.image = UIImage(named: "green_check")
-            confirmPassCheckImg.image = UIImage(named: "green_check")
+            passCheckImg.image = UIImage(named: AppImages.GreenCheck)
+            confirmPassCheckImg.image = UIImage(named: AppImages.GreenCheck)
         } else {
-            passCheckImg.image = UIImage(named: "red_check")
-            confirmPassCheckImg.image = UIImage(named: "red_check")
+            passCheckImg.image = UIImage(named: AppImages.RedCheck)
+            confirmPassCheckImg.image = UIImage(named: AppImages.RedCheck)
         }
     }
 
