@@ -26,9 +26,22 @@ class LoginVC: UIViewController {
     
     @IBAction func loginClicked(_ sender: Any) {
         
-        guard let email = emailTxt.text, email.isNotEmpty
+        guard let email = emailTxt.text, email.isNotEmpty,
+            let password = passwordTxt.text, password.isNotEmpty else { return }
         
-        Auth.auth().signIn(withEmail: <#T##String#>, password: <#T##String#>, completion: <#T##AuthDataResultCallback?##AuthDataResultCallback?##(AuthDataResult?, Error?) -> Void#>)
+        activityIndicator.startAnimating()
+        Auth.auth().signIn(withEmail: email, password: password) { (user, error) in
+            
+            if let error = error {
+                debugPrint(error)
+                self.activityIndicator.stopAnimating()
+                return
+            }
+            
+            self.activityIndicator.stopAnimating()
+            print("Login was successful")
+            
+        }
     }
     
     @IBAction func guessClicked(_ sender: Any) {

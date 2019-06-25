@@ -15,7 +15,7 @@
 		AC68AFCC22A84DCD00597C38 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC68AFCB22A84DCD00597C38 /* LoginVC.swift */; };
 		AC68AFCE22A84DE400597C38 /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC68AFCD22A84DE400597C38 /* RegisterVC.swift */; };
 		AC959C8D2298372E0060540C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC959C8C2298372E0060540C /* AppDelegate.swift */; };
-		AC959C8F2298372E0060540C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC959C8E2298372E0060540C /* ViewController.swift */; };
+		AC959C8F2298372E0060540C /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC959C8E2298372E0060540C /* HomeVC.swift */; };
 		AC959C922298372E0060540C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC959C902298372E0060540C /* Main.storyboard */; };
 		AC959C942298372F0060540C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC959C932298372F0060540C /* Assets.xcassets */; };
 		AC959C972298372F0060540C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC959C952298372F0060540C /* LaunchScreen.storyboard */; };
@@ -78,7 +78,7 @@
 		AC68AFCD22A84DE400597C38 /* RegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
 		AC959C892298372E0060540C /* Artable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Artable.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC959C8C2298372E0060540C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AC959C8E2298372E0060540C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AC959C8E2298372E0060540C /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		AC959C912298372E0060540C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AC959C932298372F0060540C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AC959C962298372F0060540C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -167,7 +167,7 @@
 			isa = PBXGroup;
 			children = (
 				AC959C8C2298372E0060540C /* AppDelegate.swift */,
-				AC959C8E2298372E0060540C /* ViewController.swift */,
+				AC959C8E2298372E0060540C /* HomeVC.swift */,
 				AC68AFCB22A84DCD00597C38 /* LoginVC.swift */,
 				AC68AFCD22A84DE400597C38 /* RegisterVC.swift */,
 			);
@@ -700,7 +700,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC5DC5F222AE9C8A00E3D44D /* Extensions.swift in Sources */,
-				AC959C8F2298372E0060540C /* ViewController.swift in Sources */,
+				AC959C8F2298372E0060540C /* HomeVC.swift in Sources */,
 				AC68AFCE22A84DE400597C38 /* RegisterVC.swift in Sources */,
 				AC959C8D2298372E0060540C /* AppDelegate.swift in Sources */,
 				ACE6C96722B02A560041E72B /* RoundedViews.swift in Sources */,
