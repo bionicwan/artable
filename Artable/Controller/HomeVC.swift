@@ -21,12 +21,25 @@ class HomeVC: UIViewController {
     }
     
     override func viewDidAppear(_ animated: Bool) {
-
+        if let _ = Auth.auth().currentUser {
+            //We are logged in
+            loginOutBtn.title = "Logout"
+        } else {
+            loginOutBtn.title = "Login"
+        }
     }
     
     @IBAction func loginOutClicked(_ sender: Any) {
-        if let user = Auth.auth().currentUser {
-            
+        if let _ = Auth.auth().currentUser {
+            //We are logged in
+            do {
+                try Auth.auth().signOut()
+                presentLoginController()
+            } catch {
+                debugPrint(error.localizedDescription)
+            }
+        } else {
+            presentLoginController()
         }
     }
     
