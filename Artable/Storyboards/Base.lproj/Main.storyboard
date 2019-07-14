@@ -17,7 +17,39 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.20000000000000001" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_cat3" translatesAutoresizingMaskIntoConstraints="NO" id="x6L-jJ-D4e">
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                            </imageView>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="CBO-oS-EDM">
+                                <rect key="frame" x="20" y="88" width="374" height="808"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="3nI-SX-i7L">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="B5z-IT-2XS">
+                                <rect key="frame" x="197" y="438" width="20" height="20"/>
+                                <color key="color" red="0.77827781439999999" green="0.41731441019999999" blue="0.33722913269999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </activityIndicatorView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="CBO-oS-EDM" secondAttribute="trailing" constant="20" id="1On-tC-xyt"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="x6L-jJ-D4e" secondAttribute="trailing" id="5KJ-63-hbH"/>
+                            <constraint firstAttribute="bottom" secondItem="CBO-oS-EDM" secondAttribute="bottom" id="C8b-Jj-zeK"/>
+                            <constraint firstItem="x6L-jJ-D4e" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="IJy-Aj-Vnj"/>
+                            <constraint firstItem="B5z-IT-2XS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="PRe-lP-qbC"/>
+                            <constraint firstItem="CBO-oS-EDM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="ZPq-Qs-9a2"/>
+                            <constraint firstItem="B5z-IT-2XS" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="aN9-FC-ctM"/>
+                            <constraint firstItem="x6L-jJ-D4e" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="hIa-r1-moM"/>
+                            <constraint firstAttribute="bottom" secondItem="x6L-jJ-D4e" secondAttribute="bottom" id="jYB-3G-hJU"/>
+                            <constraint firstItem="CBO-oS-EDM" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="np7-ha-tFQ"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="b7N-sK-skM">
@@ -54,4 +86,7 @@
             <point key="canvasLocation" x="137.68115942028987" y="771.42857142857144"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="bg_cat3" width="1500" height="1875"/>
+    </resources>
 </document>

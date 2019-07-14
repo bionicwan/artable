@@ -22,7 +22,7 @@ class HomeVC: UIViewController {
             Auth.auth().signInAnonymously { (result, error) in
                 if let error = error {
                     debugPrint(error)
-                    self.handleFireAuthError(error: error)
+                    Auth.auth().handleFireAuthError(error: error, vc: self)
                 }
             }
         }
@@ -49,27 +49,16 @@ class HomeVC: UIViewController {
                 Auth.auth().signInAnonymously { (result, error) in
                     if let error = error {
                         debugPrint(error)
-                        self.handleFireAuthError(error: error)
+                        Auth.auth().handleFireAuthError(error: error, vc: self)
                     }
                     
                     self.presentLoginController()
                 }
             } catch {
                 debugPrint(error)
-                self.handleFireAuthError(error: error)
+                Auth.auth().handleFireAuthError(error: error, vc: self)
             }
         }
-//        if let _ = Auth.auth().currentUser {
-//            //We are logged in
-//            do {
-//                try Auth.auth().signOut()
-//                presentLoginController()
-//            } catch {
-//                debugPrint(error.localizedDescription)
-//            }
-//        } else {
-//            presentLoginController()
-//        }
     }
     
     fileprivate func presentLoginController() {
