@@ -60,6 +60,8 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="activityIndicator" destination="B5z-IT-2XS" id="zQX-BT-uHx"/>
+                        <outlet property="collectionView" destination="CBO-oS-EDM" id="SHx-9R-mq0"/>
                         <outlet property="loginOutBtn" destination="eNt-CR-qcY" id="xQJ-Ng-CdK"/>
                     </connections>
                 </viewController>

@@ -13,6 +13,8 @@ class HomeVC: UIViewController {
     
     //Outlets
     @IBOutlet weak var loginOutBtn: UIBarButtonItem!
+    @IBOutlet weak var collectionView: UICollectionView!
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     
 
     override func viewDidLoad() {
