@@ -16,9 +16,20 @@ class HomeVC: UIViewController {
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     
+    //Variables
+    var categories = [Category]()
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let category = Category.init(name: "Nature", id: "jiojdwflkjd", imageUrl: "https://static1.squarespace.com/static/5ad0f17070e80248d1c86cfd/t/5c0b8fb31ae6cfd7c397aa42/1544261566486/703fc7_23347bef073a48f997b613de59def49b~mv2_d_1209_1702_s_2.jpg?format=300w", isActive: true, timestamp: Timestamp())
+        
+        categories.append(category)
+        
+        collectionView.delegate = self
+        collectionView.dataSource = self
+        collectionView.register(UINib(nibName: Identifiers.CategoryCell, bundle: nil), forCellWithReuseIdentifier: Identifiers.CategoryCell)
         
         if Auth.auth().currentUser == nil {
             Auth.auth().signInAnonymously { (result, error) in
@@ -70,3 +81,24 @@ class HomeVC: UIViewController {
     }
 }
 
+extension HomeVC : UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return categories.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: Identifiers.CategoryCell, for: indexPath) as? CategoryCell {
+            cell.configureCell(category: categories[indexPath.item])
+            return cell
+        }
+        
+        return UICollectionViewCell()
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let width = view.frame.width
+        let cellWidth = (width - 50) / 2
+        let cellHeight = cellWidth * 1.5
+        return CGSize(width: cellWidth, height: cellHeight)
+    }
+}

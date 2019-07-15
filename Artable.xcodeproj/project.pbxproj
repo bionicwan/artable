@@ -14,6 +14,12 @@
 		AC68AFC622A8490D00597C38 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AC68AFC522A8490D00597C38 /* GoogleService-Info.plist */; };
 		AC68AFCC22A84DCD00597C38 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC68AFCB22A84DCD00597C38 /* LoginVC.swift */; };
 		AC68AFCE22A84DE400597C38 /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC68AFCD22A84DE400597C38 /* RegisterVC.swift */; };
+		AC7C0F0C22DCD1D5005B3006 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7C0F0B22DCD1D5005B3006 /* Category.swift */; };
+		AC7C0F0D22DCD1D5005B3006 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7C0F0B22DCD1D5005B3006 /* Category.swift */; };
+		AC7C0F1122DCD2AE005B3006 /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7C0F0F22DCD2AE005B3006 /* CategoryCell.swift */; };
+		AC7C0F1222DCD2AE005B3006 /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7C0F0F22DCD2AE005B3006 /* CategoryCell.swift */; };
+		AC7C0F1322DCD2AE005B3006 /* CategoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC7C0F1022DCD2AE005B3006 /* CategoryCell.xib */; };
+		AC7C0F1422DCD2AE005B3006 /* CategoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC7C0F1022DCD2AE005B3006 /* CategoryCell.xib */; };
 		AC959C8D2298372E0060540C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC959C8C2298372E0060540C /* AppDelegate.swift */; };
 		AC959C8F2298372E0060540C /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC959C8E2298372E0060540C /* HomeVC.swift */; };
 		AC959C922298372E0060540C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC959C902298372E0060540C /* Main.storyboard */; };
@@ -80,6 +86,9 @@
 		AC68AFC522A8490D00597C38 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		AC68AFCB22A84DCD00597C38 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		AC68AFCD22A84DE400597C38 /* RegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
+		AC7C0F0B22DCD1D5005B3006 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		AC7C0F0F22DCD2AE005B3006 /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
+		AC7C0F1022DCD2AE005B3006 /* CategoryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryCell.xib; sourceTree = "<group>"; };
 		AC959C892298372E0060540C /* Artable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Artable.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC959C8C2298372E0060540C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AC959C8E2298372E0060540C /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
@@ -190,13 +199,6 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		AC68AFC922A84D2200597C38 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
 		AC68AFCA22A84D2C00597C38 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
@@ -205,6 +207,30 @@
 				AC959C952298372F0060540C /* LaunchScreen.storyboard */,
 			);
 			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		AC7C0F0A22DCD1C1005B3006 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AC7C0F0B22DCD1D5005B3006 /* Category.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AC7C0F0E22DCD288005B3006 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AC7C0F0F22DCD2AE005B3006 /* CategoryCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AC7C0F1522DCD2C3005B3006 /* Xibs */ = {
+			isa = PBXGroup;
+			children = (
+				AC7C0F1022DCD2AE005B3006 /* CategoryCell.xib */,
+			);
+			path = Xibs;
 			sourceTree = "<group>";
 		};
 		AC959C802298372E0060540C = {
@@ -240,7 +266,6 @@
 			isa = PBXGroup;
 			children = (
 				FC7D9B0522DBCF23001C727E /* Xibs */,
-				AC68AFC922A84D2200597C38 /* Model */,
 				AC68AFC822A84D1700597C38 /* View */,
 				AC68AFC722A84D0900597C38 /* Controller */,
 				AC68AFCA22A84D2C00597C38 /* Storyboards */,
@@ -302,6 +327,9 @@
 		AC959CEC229837E20060540C /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				AC7C0F1522DCD2C3005B3006 /* Xibs */,
+				AC7C0F0E22DCD288005B3006 /* View */,
+				AC7C0F0A22DCD1C1005B3006 /* Model */,
 				AC5DC5F022AE9C7900E3D44D /* Utils */,
 				AC959C932298372F0060540C /* Assets.xcassets */,
 			);
@@ -515,6 +543,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC959C972298372F0060540C /* LaunchScreen.storyboard in Resources */,
+				AC7C0F1322DCD2AE005B3006 /* CategoryCell.xib in Resources */,
 				AC959C942298372F0060540C /* Assets.xcassets in Resources */,
 				AC68AFC422A8475700597C38 /* GoogleService-Info.plist in Resources */,
 				AC959C922298372E0060540C /* Main.storyboard in Resources */,
@@ -541,6 +570,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC7C0F1422DCD2AE005B3006 /* CategoryCell.xib in Resources */,
 				AC959CCB229837900060540C /* LaunchScreen.storyboard in Resources */,
 				AC959CED2298380C0060540C /* Assets.xcassets in Resources */,
 				AC959CC6229837900060540C /* Main.storyboard in Resources */,
@@ -719,6 +749,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FC7D9B0B22DBDE01001C727E /* Firebase+Utils.swift in Sources */,
+				AC7C0F0C22DCD1D5005B3006 /* Category.swift in Sources */,
 				AC5DC5F222AE9C8A00E3D44D /* Extensions.swift in Sources */,
 				AC959C8F2298372E0060540C /* HomeVC.swift in Sources */,
 				AC68AFCE22A84DE400597C38 /* RegisterVC.swift in Sources */,
@@ -727,6 +758,7 @@
 				AC68AFCC22A84DCD00597C38 /* LoginVC.swift in Sources */,
 				FC7D9B0822DBCF40001C727E /* ForgotPasswordVC.swift in Sources */,
 				ACE6C96522B024EB0041E72B /* Constants.swift in Sources */,
+				AC7C0F1122DCD2AE005B3006 /* CategoryCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -753,6 +785,8 @@
 				AC959CC3229837900060540C /* ViewController.swift in Sources */,
 				FC7D9B0C22DBDF79001C727E /* Extensions.swift in Sources */,
 				AC959CC1229837900060540C /* AppDelegate.swift in Sources */,
+				AC7C0F0D22DCD1D5005B3006 /* Category.swift in Sources */,
+				AC7C0F1222DCD2AE005B3006 /* CategoryCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
