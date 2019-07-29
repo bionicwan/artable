@@ -22,7 +22,7 @@
                                 <rect key="frame" x="0.0" y="88" width="414" height="808"/>
                             </imageView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="CBO-oS-EDM">
-                                <rect key="frame" x="20" y="88" width="374" height="808"/>
+                                <rect key="frame" x="8" y="88" width="398" height="808"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="3nI-SX-i7L">
                                     <size key="itemSize" width="50" height="50"/>
@@ -39,12 +39,12 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="CBO-oS-EDM" secondAttribute="trailing" constant="20" id="1On-tC-xyt"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="CBO-oS-EDM" secondAttribute="trailing" constant="8" id="1On-tC-xyt"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="x6L-jJ-D4e" secondAttribute="trailing" id="5KJ-63-hbH"/>
                             <constraint firstAttribute="bottom" secondItem="CBO-oS-EDM" secondAttribute="bottom" id="C8b-Jj-zeK"/>
                             <constraint firstItem="x6L-jJ-D4e" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="IJy-Aj-Vnj"/>
                             <constraint firstItem="B5z-IT-2XS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="PRe-lP-qbC"/>
-                            <constraint firstItem="CBO-oS-EDM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="ZPq-Qs-9a2"/>
+                            <constraint firstItem="CBO-oS-EDM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="ZPq-Qs-9a2"/>
                             <constraint firstItem="B5z-IT-2XS" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="aN9-FC-ctM"/>
                             <constraint firstItem="x6L-jJ-D4e" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="hIa-r1-moM"/>
                             <constraint firstAttribute="bottom" secondItem="x6L-jJ-D4e" secondAttribute="bottom" id="jYB-3G-hJU"/>
@@ -82,16 +82,16 @@
                                 <rect key="frame" x="0.0" y="88" width="414" height="808"/>
                             </imageView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="52L-vO-cmB">
-                                <rect key="frame" x="20" y="88" width="374" height="808"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="52L-vO-cmB" firstAttribute="leading" secondItem="iuK-Ps-DZF" secondAttribute="leading" constant="20" id="7aZ-WP-MbZ"/>
+                            <constraint firstItem="52L-vO-cmB" firstAttribute="leading" secondItem="iuK-Ps-DZF" secondAttribute="leading" id="7aZ-WP-MbZ"/>
                             <constraint firstAttribute="bottom" secondItem="52L-vO-cmB" secondAttribute="bottom" id="DQi-aZ-C7h"/>
                             <constraint firstAttribute="bottom" secondItem="7iA-h4-5hz" secondAttribute="bottom" id="TMd-7h-5Rc"/>
-                            <constraint firstItem="iuK-Ps-DZF" firstAttribute="trailing" secondItem="52L-vO-cmB" secondAttribute="trailing" constant="20" id="k2G-GJ-2bI"/>
+                            <constraint firstItem="iuK-Ps-DZF" firstAttribute="trailing" secondItem="52L-vO-cmB" secondAttribute="trailing" id="k2G-GJ-2bI"/>
                             <constraint firstItem="7iA-h4-5hz" firstAttribute="leading" secondItem="iuK-Ps-DZF" secondAttribute="leading" id="ngZ-3J-w2E"/>
                             <constraint firstItem="52L-vO-cmB" firstAttribute="top" secondItem="iuK-Ps-DZF" secondAttribute="top" id="tSw-83-8KI"/>
                             <constraint firstItem="7iA-h4-5hz" firstAttribute="trailing" secondItem="iuK-Ps-DZF" secondAttribute="trailing" id="uLA-ml-nMK"/>
@@ -99,6 +99,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="iuK-Ps-DZF"/>
                     </view>
+                    <navigationItem key="navigationItem" id="Yvd-Cn-Ktd"/>
                     <connections>
                         <outlet property="tableView" destination="52L-vO-cmB" id="bkz-P4-3pF"/>
                     </connections>
@@ -118,7 +119,7 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="5G6-4J-lZB"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="rkh-6A-31B"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gdw-ha-sbw" userLabel="First Responder" sceneMemberID="firstResponder"/>
