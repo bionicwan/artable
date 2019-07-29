@@ -9,6 +9,15 @@
 /* Begin PBXBuildFile section */
 		3FFE3721A5612E87E0E7C06C /* Pods_Artable.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2151E9B8FFCB80CA107DEB1C /* Pods_Artable.framework */; };
 		8A35C2DF45FAC93883A48A10 /* Pods_ArtableAdmin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D4BF937AAEE69346BBB6152 /* Pods_ArtableAdmin.framework */; };
+		AC1B395222EF74F6004DF051 /* ProductsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC1B395122EF74F6004DF051 /* ProductsVC.swift */; };
+		AC1B395322EF7503004DF051 /* ProductsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC1B395122EF74F6004DF051 /* ProductsVC.swift */; };
+		AC1B395522EF7586004DF051 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC1B395422EF7586004DF051 /* Product.swift */; };
+		AC1B395622EF7586004DF051 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC1B395422EF7586004DF051 /* Product.swift */; };
+		AC1B395722EF7787004DF051 /* RoundedViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE6C96622B02A560041E72B /* RoundedViews.swift */; };
+		AC1B395A22EF786B004DF051 /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC1B395822EF786B004DF051 /* ProductCell.swift */; };
+		AC1B395B22EF786B004DF051 /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC1B395822EF786B004DF051 /* ProductCell.swift */; };
+		AC1B395C22EF786B004DF051 /* ProductCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC1B395922EF786B004DF051 /* ProductCell.xib */; };
+		AC1B395D22EF786B004DF051 /* ProductCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC1B395922EF786B004DF051 /* ProductCell.xib */; };
 		AC5DC5F222AE9C8A00E3D44D /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5DC5F122AE9C8A00E3D44D /* Extensions.swift */; };
 		AC68AFC422A8475700597C38 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AC68AFC322A8475700597C38 /* GoogleService-Info.plist */; };
 		AC68AFC622A8490D00597C38 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AC68AFC522A8490D00597C38 /* GoogleService-Info.plist */; };
@@ -81,6 +90,10 @@
 		986C7BE23A1DBF87B764CBDE /* Pods-Artable.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Artable.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Artable/Pods-Artable.debug.xcconfig"; sourceTree = "<group>"; };
 		9A7B98CA625309FA728028A3 /* Pods-ArtableAdmin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArtableAdmin.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ArtableAdmin/Pods-ArtableAdmin.debug.xcconfig"; sourceTree = "<group>"; };
 		9D4BF937AAEE69346BBB6152 /* Pods_ArtableAdmin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ArtableAdmin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC1B395122EF74F6004DF051 /* ProductsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsVC.swift; sourceTree = "<group>"; };
+		AC1B395422EF7586004DF051 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		AC1B395822EF786B004DF051 /* ProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
+		AC1B395922EF786B004DF051 /* ProductCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductCell.xib; sourceTree = "<group>"; };
 		AC5DC5F122AE9C8A00E3D44D /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		AC68AFC322A8475700597C38 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		AC68AFC522A8490D00597C38 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -187,6 +200,7 @@
 				AC959C8E2298372E0060540C /* HomeVC.swift */,
 				AC68AFCB22A84DCD00597C38 /* LoginVC.swift */,
 				AC68AFCD22A84DE400597C38 /* RegisterVC.swift */,
+				AC1B395122EF74F6004DF051 /* ProductsVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -194,7 +208,6 @@
 		AC68AFC822A84D1700597C38 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				ACE6C96622B02A560041E72B /* RoundedViews.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -213,6 +226,7 @@
 			isa = PBXGroup;
 			children = (
 				AC7C0F0B22DCD1D5005B3006 /* Category.swift */,
+				AC1B395422EF7586004DF051 /* Product.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -221,6 +235,8 @@
 			isa = PBXGroup;
 			children = (
 				AC7C0F0F22DCD2AE005B3006 /* CategoryCell.swift */,
+				ACE6C96622B02A560041E72B /* RoundedViews.swift */,
+				AC1B395822EF786B004DF051 /* ProductCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -228,6 +244,7 @@
 		AC7C0F1522DCD2C3005B3006 /* Xibs */ = {
 			isa = PBXGroup;
 			children = (
+				AC1B395922EF786B004DF051 /* ProductCell.xib */,
 				AC7C0F1022DCD2AE005B3006 /* CategoryCell.xib */,
 			);
 			path = Xibs;
@@ -543,6 +560,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC959C972298372F0060540C /* LaunchScreen.storyboard in Resources */,
+				AC1B395C22EF786B004DF051 /* ProductCell.xib in Resources */,
 				AC7C0F1322DCD2AE005B3006 /* CategoryCell.xib in Resources */,
 				AC959C942298372F0060540C /* Assets.xcassets in Resources */,
 				AC68AFC422A8475700597C38 /* GoogleService-Info.plist in Resources */,
@@ -573,6 +591,7 @@
 				AC7C0F1422DCD2AE005B3006 /* CategoryCell.xib in Resources */,
 				AC959CCB229837900060540C /* LaunchScreen.storyboard in Resources */,
 				AC959CED2298380C0060540C /* Assets.xcassets in Resources */,
+				AC1B395D22EF786B004DF051 /* ProductCell.xib in Resources */,
 				AC959CC6229837900060540C /* Main.storyboard in Resources */,
 				AC68AFC622A8490D00597C38 /* GoogleService-Info.plist in Resources */,
 			);
@@ -753,12 +772,15 @@
 				AC5DC5F222AE9C8A00E3D44D /* Extensions.swift in Sources */,
 				AC959C8F2298372E0060540C /* HomeVC.swift in Sources */,
 				AC68AFCE22A84DE400597C38 /* RegisterVC.swift in Sources */,
+				AC1B395A22EF786B004DF051 /* ProductCell.swift in Sources */,
 				AC959C8D2298372E0060540C /* AppDelegate.swift in Sources */,
 				ACE6C96722B02A560041E72B /* RoundedViews.swift in Sources */,
 				AC68AFCC22A84DCD00597C38 /* LoginVC.swift in Sources */,
+				AC1B395222EF74F6004DF051 /* ProductsVC.swift in Sources */,
 				FC7D9B0822DBCF40001C727E /* ForgotPasswordVC.swift in Sources */,
 				ACE6C96522B024EB0041E72B /* Constants.swift in Sources */,
 				AC7C0F1122DCD2AE005B3006 /* CategoryCell.swift in Sources */,
+				AC1B395522EF7586004DF051 /* Product.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -784,9 +806,13 @@
 			files = (
 				AC959CC3229837900060540C /* ViewController.swift in Sources */,
 				FC7D9B0C22DBDF79001C727E /* Extensions.swift in Sources */,
+				AC1B395322EF7503004DF051 /* ProductsVC.swift in Sources */,
 				AC959CC1229837900060540C /* AppDelegate.swift in Sources */,
+				AC1B395722EF7787004DF051 /* RoundedViews.swift in Sources */,
 				AC7C0F0D22DCD1D5005B3006 /* Category.swift in Sources */,
+				AC1B395B22EF786B004DF051 /* ProductCell.swift in Sources */,
 				AC7C0F1222DCD2AE005B3006 /* CategoryCell.swift in Sources */,
+				AC1B395622EF7586004DF051 /* Product.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
