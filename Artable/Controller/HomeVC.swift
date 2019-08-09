@@ -24,7 +24,7 @@ class HomeVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let category = Category.init(name: "Nature", id: "jiojdwflkjd", imageUrl: "https://static1.squarespace.com/static/5ad0f17070e80248d1c86cfd/t/5c0b8fb31ae6cfd7c397aa42/1544261566486/703fc7_23347bef073a48f997b613de59def49b~mv2_d_1209_1702_s_2.jpg?format=300w", isActive: true, timestamp: Timestamp())
+        let category = Category.init(name: "Nature", id: "jiojdwflkjd", imageUrl: "https://images.unsplash.com/photo-1535083783855-76ae62b2914e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80", isActive: true, timestamp: Timestamp())
         
         categories.append(category)
         
@@ -41,6 +41,10 @@ class HomeVC: UIViewController {
             }
         }
         
+    }
+    
+    func fetchDocument() {
+        let docRef = Firestore.firestore().collection("categories").document("zfdUDnlOvBu1EXXqSMhX")
     }
     
     override func viewDidAppear(_ animated: Bool) {
