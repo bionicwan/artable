@@ -45,14 +45,53 @@ class HomeVC: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         //fetchDocument()
-        fetchCollection()
+        //fetchCollection()
     }
     
     override func viewWillDisappear(_ animated: Bool) {
         self.listener.remove()
     }
     
-    func fetchCollection() {
+    func setCategoriesListener() {
+        listener = db.collection("categories").addSnapshotListener({ (snap, error) in
+            if let error = error {
+                debugPrint(error.localizedDescription)
+                return
+            }
+            
+            snap?.documentChanges.forEach({ (change) in
+                let data = change.document.data()
+                let category = Category.init(data: data)
+                
+                switch change.type {
+                case.added:
+                    self.onDocumentAdded(change: change, category: category)
+                case.modified:
+                    self.onDocumentModified()
+                case.removed:
+                    self.onDocumentRemoved()
+                }
+            })
+            
+            
+        })
+    }
+    
+    func onDocumentAdded(change: DocumentChange, category: Category) {
+        let newIndex = Int(change.newIndex)
+        self.categories.insert(category, at: newIndex)
+        collectionView.insertItems(at: [IndexPath(item: newIndex, section: 0)])
+    }
+    
+    func onDocumentModified() {
+        
+    }
+    
+    func onDocumentRemoved() {
+        
+    }
+    
+    /*func fetchCollection() {
         let collectionRef = db.collection("categories")
         self.listener = collectionRef.addSnapshotListener { (snap, error) in
             guard let documents = snap?.documents else { return }
@@ -97,9 +136,10 @@ class HomeVC: UIViewController {
             self.collectionView.reloadData()
             
         }*/
-    }
+    }*/
     
     override func viewDidAppear(_ animated: Bool) {
+        setCategoriesListener()
         if let user = Auth.auth().currentUser , !user.isAnonymous {
             //We are logged in
             loginOutBtn.title = "Logout"
